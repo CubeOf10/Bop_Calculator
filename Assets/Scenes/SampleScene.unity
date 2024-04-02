@@ -325,7 +325,7 @@ MonoBehaviour:
   - AttackVal: 1
     AttackHealth: 15
     AttackMax: 15
-  - AttackVal: 2
+  - AttackVal: 2.5
     AttackHealth: 10
     AttackMax: 10
   - AttackVal: 3
@@ -337,9 +337,9 @@ MonoBehaviour:
     DefenseMax: 15
     DefenseBonus: 1
   - DefenseVal: 2
-    DefenseHealth: 10
+    DefenseHealth: 8
     DefenseMax: 10
-    DefenseBonus: 1
+    DefenseBonus: 0.7
   - DefenseVal: 3
     DefenseHealth: 15
     DefenseMax: 15

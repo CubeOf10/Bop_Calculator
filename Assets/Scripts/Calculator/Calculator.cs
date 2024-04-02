@@ -74,8 +74,8 @@ public class Calculator : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            Debug.Log("Damage Dealt " + AttackDamage(Attackers[0], Defenders[0]));
-            Debug.Log("Damage Recieved " + DefenseDamage(Attackers[0], Defenders[0]));
+            Debug.Log("Damage Dealt " + AttackDamage(Attackers[1], Defenders[1]));
+            Debug.Log("Damage Recieved " + DefenseDamage(Attackers[1], Defenders[1]));
         };
         /*if(Input.GetKeyDown(KeyCode.R))
         {
