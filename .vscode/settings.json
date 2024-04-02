@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "BopCalculator.sln"
+    "dotnet.defaultSolution": "Bop_Calculator.sln"
 }
