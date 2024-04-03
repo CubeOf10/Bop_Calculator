@@ -5,12 +5,6 @@ using UnityEngine;
 using UnityEngine.UI;
 public class Calculator : MonoBehaviour
 {
-    public static float MyRound(float value) {
-        if (value % 0.5f == 0)
-            return Mathf.Ceil(value);
-        else
-            return Mathf.Floor(value);
-    }
     public List<AttackValues> Attackers = new List<AttackValues>();
     public List<DefenseValues> Defenders = new List<DefenseValues>();
     void Start()
