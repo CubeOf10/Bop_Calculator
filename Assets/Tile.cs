@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Tile : MonoBehaviour
 {
+    public bool Keeper = true;
     SpriteRenderer SR;
     public List<Color> colours;
     public int tileType = 0;

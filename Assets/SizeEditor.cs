@@ -10,25 +10,39 @@ public class SizeEditor : MonoBehaviour
     public TextMeshProUGUI columnsText;
     void Start()
     {
+        columnsText.text = gridManager.col.ToString();
+        rowsText.text = gridManager.row.ToString();
     }
 
     public void UpCol()
     {
-        gridManager.col++;
-        columnsText.text = gridManager.col.ToString();
+        if(gridManager.col < 5)
+        {
+            gridManager.col++;
+            columnsText.text = gridManager.col.ToString();
+        }
     }
     public void UpRow(){
-        gridManager.row++;
-        rowsText.text = gridManager.row.ToString();
+        if(gridManager.row < 5)
+        {
+            gridManager.row++;
+            rowsText.text = gridManager.row.ToString();
+        }
     }
 
     public void DownCol(){
-        gridManager.col--;
-        columnsText.text = gridManager.col.ToString();
+        if(gridManager.col > 2)
+        {
+            gridManager.col--;
+            columnsText.text = gridManager.col.ToString();
+        }
     }
     public void DownRow(){
-        gridManager.row--;
-        rowsText.text = gridManager.row.ToString();
+        if(gridManager.row > 2)
+        {
+            gridManager.row--;
+            rowsText.text = gridManager.row.ToString();
+        }
     }
 
 }

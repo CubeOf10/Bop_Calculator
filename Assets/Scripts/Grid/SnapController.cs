@@ -9,13 +9,20 @@ public class SnapController : MonoBehaviour
     public float snapRange = 0.5f;
     void Start()
     {
+        RedefineDraggables();
+    }
+    public void RedefineDraggables()
+    {
         foreach(Draggable draggable in draggableObjects)
         {
             draggable.dragEndedCallback = OnDragEnded;
         }
     }
-
-
+    void Update()
+    {
+        if(Input.GetKeyUp(KeyCode.Space))
+            RedefineDraggables();
+    }
     private void OnDragEnded(Draggable draggable)
     {
         float closestDistance = -1;
