@@ -15,7 +15,7 @@ public class SnapController : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
+
     private void OnDragEnded(Draggable draggable)
     {
         float closestDistance = -1;

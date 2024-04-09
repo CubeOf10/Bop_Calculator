@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+
 public class SpawnUnit : MonoBehaviour
 {
     public List<GameObject> UnitList;
@@ -11,7 +12,7 @@ public class SpawnUnit : MonoBehaviour
         unitHolder = GameObject.Find("UnitHolder");
     }
 
-    public void CreateUnit(string chosenName, int x, int y, int z)//, Vector3 spawnPos)
+    public void CreateUnit(string chosenName)//, int x, int y, int z)//, Vector3 spawnPos)
     {
         foreach(GameObject troop in UnitList)
         {
@@ -19,7 +20,7 @@ public class SpawnUnit : MonoBehaviour
             if(troop.name == chosenName)
             {
                 GameObject newTroop = Instantiate(troop, unitHolder.transform);
-                newTroop.transform.position = new Vector3(x, y, z);
+                newTroop.transform.position = new Vector3(2, 3, 0);
             }
         }
     }
