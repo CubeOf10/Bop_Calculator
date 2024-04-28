@@ -25,12 +25,20 @@ public class Tile : MonoBehaviour
     }
     void OnMouseUp()
     {
-        tileType++;
-        if(tileType > 6)
-            tileType = 0;
+        if(!DragAndDrop.TroopMoving)
+        {    
+            tileType++;
+            if(tileType > 6)
+                tileType = 0;
 
-        ChangeColour(tileType);
+            ChangeColour(tileType);
+        }
+    }
+    void Update()
+    {
         
+        
+ 
     }
 
     void ChangeColour(int type)
